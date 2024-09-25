@@ -1,0 +1,195 @@
+/* style.css */
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e2e2e2;
+}
+
+/* Showcase */
+#showcase {
+    background: url('images/showcase.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#showcase p {
+    font-size: 1.2em;
+}
+
+#showcase .button {
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+#info {
+    background: #e2e2e2;
+    text-align: center;
+}
+
+#info h2 {
+    margin-bottom: 20px;
+}
+
+#info p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(33% - 20px);
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+}
